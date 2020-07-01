@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200701130924_Update_Section1.cs" />
+    <Compile Remove="Migrations\20200701130924_Update_Section1.Designer.cs" />
+    <Compile Remove="Migrations\20200701131348_Update_Section2.cs" />
+    <Compile Remove="Migrations\20200701131348_Update_Section2.Designer.cs" />
+    <Compile Remove="Migrations\20200701131654_Update_Section3.cs" />
+    <Compile Remove="Migrations\20200701131654_Update_Section3.Designer.cs" />
+    <Compile Remove="Migrations\20200701132059_Update_Section2.cs" />
+    <Compile Remove="Migrations\20200701132059_Update_Section2.Designer.cs" />
+    <Compile Remove="Migrations\20200701132308_Update_Section1.cs" />
+    <Compile Remove="Migrations\20200701132308_Update_Section1.Designer.cs" />
+    <Compile Remove="Migrations\20200701132552_Update_Section2.cs" />
+    <Compile Remove="Migrations\20200701132552_Update_Section2.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Model.Entities\Model.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
